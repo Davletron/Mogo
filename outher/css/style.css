@@ -1,4 +1,5 @@
 body {
+  display: block;
   margin: 0;
   background: red;
   font-size: 15px;
@@ -24,14 +25,47 @@ h6 {
   margin: 0 auto;
 }
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("/mogo/outher/images/picture.png") center no-repeat;
+  background: url("/outher/images/picture.png") center no-repeat;
   -webkit-backdrop-size: cover;
   background-size: cover;
 }
+.intro_title {
+  color: #fff;
+  font-size: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.intro_title:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+
+  margin: 60px auto 60px;
+
+  background-color: #fff;
+}
+.intro_inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro_suptitle {
+  margin-bottom: 20px;
+
+  font-size: 72px;
+  color: #fff;
+}
 
 .header {
+  padding-top: 30px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -44,13 +78,58 @@ h6 {
   font-weight: 700;
   color: #fff;
 }
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav {
   font-size: 14px;
   text-transform: uppercase;
 }
-.nav_link{
+.nav_link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
   color: #fff;
   text-decoration: none;
-
+  transition: color 0.2s linear;
 }
-ОСТАНОВИЛСЯ НА 20 МИНУТЕ
+.nav_link:hover {
+  color: yellow;
+}
+.nav_link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: yellow;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.nav_link:hover:after {
+  display: block;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+
+  border: 3px solid #fff;
+
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700px;
+  transition: background 0.1s linear, color 0.1s linear;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+39 min
