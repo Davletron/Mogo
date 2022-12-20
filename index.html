@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,886 +10,917 @@
       src="https://kit.fontawesome.com/7eeb0c9378.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Mogo</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header_inner">
-          <div class="header_logo">Mogo</div>
-          <nav class="nav">
-            <a class="nav_link" href="#">About</a>
-            <a class="nav_link" href="#">Service</a>
-            <a class="nav_link" href="#">Work</a>
-            <a class="nav_link" href="#">Blog</a>
-            <a class="nav_link" href="#">Contact</a>
+          <div class="header_logo" data-scroll="#intro">Mogo</div>
+          <nav class="nav" id="nav">
+            <a class="nav_link" href="#" data-scroll="#about">About</a>
+            <a class="nav_link" href="#" data-scroll="#service">Service</a>
+            <a class="nav_link" href="#" data-scroll="#work">Work</a>
+            <a class="nav_link" href="#" data-scroll="#blog">Blog</a>
+            <a class="nav_link" href="#" data-scroll="#footer">Contact</a>
           </nav>
+          <button class="nav-toggle" id="nav-toggle" type="button">
+            <span class="nav-toggle_item">Menu</span>
+          </button>
         </div>
       </div>
     </header>
-    <div class="intro">
-      <div class="container">
-        <div class="intro_inner">
-          <h2 class="intro_suptitle">Creative Template</h2>
-          <h1 class="intro_title">Welcome to Mogo</h1>
-          <a class="btn" href="#">Learn more</a>
-        </div>
-      </div>
-
-      <div class="slider">
+    <div class="page">
+      <div class="intro" id="intro">
         <div class="container">
-          <div class="slider_inner">
-            <div class="slider_item active">
-              <span class="slider_num">01</span>
-              Intro
-            </div>
-            <div class="slider_item">
-              <span class="slider_num">02</span>
-              Work
-            </div>
-            <div class="slider_item">
-              <span class="slider_num">03</span>
-              About
-            </div>
-            <div class="slider_item">
-              <span class="slider_num">04</span>
-              Contacts
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="selection">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">What we do</h3>
-          <h2 class="section_title">Story about us</h2>
-          <div class="section_text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-          </div>
-        </div>
-        <div class="about">
-          <div class="about_item">
-            <div class="card_inner">
-              <div class="about_img">
-                <img src="/outher/images/selection1.jpg" alt="" />
-              </div>
-
-              <div class="about_text">Super Team</div>
-            </div>
-          </div>
-          <div class="about_item">
-            <div class="card_inner">
-              <div class="about_img">
-                <img src="/outher/images/selection2.jpg" alt="" />
-              </div>
-              <div class="about_text">Super Team</div>
-            </div>
-          </div>
-          <div class="about_item">
-            <div class="card_inner">
-              <div class="about_img">
-                <img src="/outher/images/selection3.jpg" alt="" />
-              </div>
-              <div class="about_text">Super Team</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="statistics">
-      <div class="container">
-        <div class="stat">
-          <div class="stat_item">
-            <div class="stat_count">42</div>
-            <div class="stat_text">Web Desing projects</div>
-          </div>
-          <div class="stat_item">
-            <div class="stat_count">123</div>
-            <div class="stat_text">Happy client</div>
-          </div>
-          <div class="stat_item">
-            <div class="stat_count">15</div>
-            <div class="stat_text">Award winner</div>
-          </div>
-          <div class="stat_item">
-            <div class="stat_count">100</div>
-            <div class="stat_text">Cup of coffee</div>
-          </div>
-          <div class="stat_item">
-            <div class="stat_count">27</div>
-            <div class="stat_text">members</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="selection">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">We work with</h3>
-          <h2 class="section_title">Amazing services</h2>
-        </div>
-        <div class="services">
-          <div class="services_item">
-            <img
-              class="servises_icon"
-              src="/outher/images/icons/photography .jpg"
-              alt=""
-            />
-            <div class="service_title">Photography</div>
-            <div class="services_text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-              aut modi doloremque.
-            </div>
-          </div>
-          <div class="services_item">
-            <img
-              class="servises_icon"
-              src="/outher/images/icons/web.jpg"
-              alt=""
-            />
-            <div class="service_title">Webdising</div>
-            <div class="services_text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, id
-              iste! Delectus, animi?
-            </div>
-          </div>
-          <div class="services_item">
-            <img
-              class="servises_icon"
-              src="/outher/images/icons/creativity.jpg"
-              alt=""
-            />
-            <div class="service_title">Creativity</div>
-            <div class="services_text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore perspiciatis blanditiis eveniet rerum, saepe sunt
-              laudantium dolor.
-            </div>
+          <div class="intro_inner">
+            <h2 class="intro_suptitle">Creative Template</h2>
+            <h1 class="intro_title">Welcome to Mogo</h1>
+            <a class="btn" href="#">Learn more</a>
           </div>
         </div>
 
-        <hr />
-        <div class="services">
-          <div class="services_item">
-            <img
-              class="servises_icon"
-              src="/outher/images/icons/seo.jpg"
-              alt=""
-            />
-            <div class="service_title">Seo</div>
-            <div class="services_text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-              aut modi doloremque.
-            </div>
-          </div>
-          <div class="services_item">
-            <img
-              class="servises_icon"
-              src="/outher/images/icons/css-html.jpg"
-              alt=""
-            />
-            <div class="service_title">CSS/HTML</div>
-            <div class="services_text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, id
-              iste! Delectus, animi?
-            </div>
-          </div>
-          <div class="services_item">
-            <img
-              class="servises_icon"
-              src="/outher/images/icons/digital.png"
-              alt=""
-            />
-            <div class="service_title">Digital</div>
-            <div class="services_text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Inventore perspiciatis blanditiis eveniet rerum, saepe sunt
-              laudantium dolor.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="selection section--divices">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">For all devices</h3>
-          <h2 class="section_title">Unique design</h2>
-        </div>
-        <div class="devices">
-          <img class="devices_item" src="/outher/images/ipad.jpg" alt="" />
-          <img
-            class="devices_item devices_item--iphone"
-            src="/outher/images/iphone.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="selection">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">Service</h3>
-          <h2 class="section_title">What we do</h2>
-          <div class="section_text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-          </div>
-        </div>
-        <div class="wedo">
-          <div class="wedo_item">
-            <img src="/outher/images/chel.jpg" alt="" />
-          </div>
-          <div class="wedo_item">
-            <div class="acardion">
-              <div class="acardion_item">
-                <div class="acardion_header">
-                  <img
-                    class="acardion_icon"
-                    src="/outher/images/icons/photography .jpg"
-                    alt=""
-                  />
-                  <div class="acardion_title">Photography</div>
-                </div>
-                <div class="acardion_content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tempore assumenda ab ipsa quod commodi consectetur! Atque,
-                    facilis dolorem. Maiores, odit temporibus? Iure cumque
-                    asperiores excepturi perferendis sunt, delectus veritatis
-                    earum aut omnis sequi odit rem ipsa dolor aperiam, maxime at
-                    vel assumenda qui veniam. Nihil ad magni repudiandae eos
-                    officiis.
-                  </p>
-                </div>
+        <div class="slider">
+          <div class="container">
+            <div class="slider_inner">
+              <div class="slider_item active">
+                <span class="slider_num">01</span>
+                <span class="slider_text"> Intro </span>
               </div>
-              <div class="acardion_item active">
-                <div class="acardion_header">
-                  <img
-                    class="acardion_icon"
-                    src="/outher/images/icons/creativity.jpg"
-                    alt=""
-                  />
-                  <div class="acardion_title">Creativity</div>
-                </div>
-                <div class="acardion_content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tempore assumenda ab ipsa quod commodi consectetur! Atque,
-                    facilis dolorem. Maiores, odit temporibus? Iure cumque
-                    asperiores excepturi perferendis sunt, delectus veritatis
-                    earum aut omnis sequi odit rem ipsa dolor aperiam, maxime at
-                    vel assumenda qui veniam. Nihil ad magni repudiandae eos
-                    officiis.
-                  </p>
-                </div>
+              <div class="slider_item">
+                <span class="slider_num">02</span>
+                <span class="slider_text"> Work</span>
               </div>
-              <div class="acardion_item">
-                <div class="acardion_header">
-                  <img
-                    class="acardion_icon"
-                    src="/outher/images/icons/web.jpg"
-                    alt=""
-                  />
-                  <div class="acardion_title">Web desing</div>
-                </div>
-                <div class="acardion_content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tempore assumenda ab ipsa quod commodi consectetur! Atque,
-                    facilis dolorem. Maiores, odit temporibus? Iure cumque
-                    asperiores excepturi perferendis sunt, delectus veritatis
-                    earum aut omnis sequi odit rem ipsa dolor aperiam, maxime at
-                    vel assumenda qui veniam. Nihil ad magni repudiandae eos
-                    officiis.
-                  </p>
-                </div>
+              <div class="slider_item">
+                <span class="slider_num">03</span>
+                <span class="slider_text">About</span>
+              </div>
+              <div class="slider_item">
+                <span class="slider_num">04</span>
+                <span class="slider_text">Contacts</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <div class="selection selection--gray">
-      <div class="container">
-        <div class="reviews">
-          <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
-          <a class="reviews_btn reviews_btn--next" href="#">Next</a>
-          <div class="reviews_item">
-            <img class="reviews_foto" src="http://placehold.it/145" alt="" />
-            <div class="reviews_text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est
-              atque repellendus eos fugit sint. Voluptatem ex ab minima quidem
-              modi laboriosam sequi repellat laudantium, labore dicta aperiam
-              vero. Dolorem?
-            </div>
-            <div class="reviews_author">Ilyas Davletshin</div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <section class="selection">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">Who we are</h3>
-          <h2 class="section_title">Meet our team</h2>
-          <div class="section_text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-          </div>
-        </div>
-        <div class="about">
-          <div class="about_item">
-            <div class="card_inner">
-              <div class="about_img">
-                <img src="/outher/images/ilyas.jpg" alt="" />
-              </div>
-              <div class="about_text">
-                <div class="social">
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-google"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card_info">
-              <div class="card_name">Ilyas Davletshin</div>
-              <div class="card_prof">Service ingeneer</div>
+      <section class="selection" id="about">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">What we do</h3>
+            <h2 class="section_title">Story about us</h2>
+            <div class="section_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
             </div>
           </div>
-
-          <div class="about_item">
-            <div class="card_inner">
-              <div class="about_img">
-                <img src="/outher/images/ilyas.jpg" alt="" />
-              </div>
-              <div class="about_text">
-                <div class="social">
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-google"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card_info">
-              <div class="card_name">Ilyas Davletshin</div>
-              <div class="card_prof">Service ingeneer</div>
-            </div>
-          </div>
-          <div class="about_item">
-            <div class="about_img">
+          <div class="about">
+            <div class="about_item">
               <div class="card_inner">
-                <img src="/outher/images/ilyas.jpg" alt="" />
+                <div class="about_img">
+                  <img src="/outher/images/selection1.jpg" alt="" />
+                </div>
+
+                <div class="about_text">Super Team</div>
               </div>
-              <div class="about_text">
-                <div class="social">
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-google"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a class="social_item" href="#" terget="blank">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
+            </div>
+            <div class="about_item">
+              <div class="card_inner">
+                <div class="about_img">
+                  <img src="/outher/images/selection2.jpg" alt="" />
+                </div>
+                <div class="about_text">Super Team</div>
+              </div>
+            </div>
+            <div class="about_item">
+              <div class="card_inner">
+                <div class="about_img">
+                  <img src="/outher/images/selection2.jpg" alt="" />
+                </div>
+                <div class="about_text">Super Team</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="statistics">
+        <div class="container">
+          <div class="stat">
+            <div class="stat_item">
+              <div class="stat_count">42</div>
+              <div class="stat_text">Web Desing projects</div>
+            </div>
+            <div class="stat_item">
+              <div class="stat_count">123</div>
+              <div class="stat_text">Happy client</div>
+            </div>
+            <div class="stat_item">
+              <div class="stat_count">15</div>
+              <div class="stat_text">Award winner</div>
+            </div>
+            <div class="stat_item">
+              <div class="stat_count">100</div>
+              <div class="stat_text">Cup of coffee</div>
+            </div>
+            <div class="stat_item">
+              <div class="stat_count">27</div>
+              <div class="stat_text">members</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="selection" id="service">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">We work with</h3>
+            <h2 class="section_title">Amazing services</h2>
+          </div>
+          <div class="services">
+            <div class="services_item services_item--border">
+              <img
+                class="servises_icon"
+                src="/outher/images/icons/photography .jpg"
+                alt=""
+              />
+              <div class="service_title">Photography</div>
+              <div class="services_text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eveniet aut modi doloremque.
+              </div>
+            </div>
+            <div class="services_item services_item--border">
+              <img
+                class="servises_icon"
+                src="/outher/images/icons/web.jpg"
+                alt=""
+              />
+              <div class="service_title">Webdising</div>
+              <div class="services_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                id iste! Delectus, animi?
+              </div>
+            </div>
+            <div class="services_item services_item--border">
+              <img
+                class="servises_icon"
+                src="/outher/images/icons/creativity.jpg"
+                alt=""
+              />
+              <div class="service_title">Creativity</div>
+              <div class="services_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Inventore perspiciatis blanditiis eveniet rerum, saepe sunt
+                laudantium dolor.
+              </div>
+            </div>
+
+            <div class="services_item">
+              <img
+                class="servises_icon"
+                src="/outher/images/icons/css-html.jpg"
+                alt=""
+              />
+              <div class="service_title">CSS/HTML</div>
+              <div class="services_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                id iste! Delectus, animi?
+              </div>
+            </div>
+            <div class="services_item">
+              <img
+                class="servises_icon"
+                src="/outher/images/icons/digital.png"
+                alt=""
+              />
+              <div class="service_title">Digital</div>
+              <div class="services_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Inventore perspiciatis blanditiis eveniet rerum, saepe sunt
+                laudantium dolor.
+              </div>
+            </div>
+            <div class="services_item">
+              <img
+                class="servises_icon"
+                src="/outher/images/icons/seo.jpg"
+                alt=""
+              />
+              <div class="service_title">seo</div>
+              <div class="services_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Inventore perspiciatis blanditiis eveniet rerum, saepe sunt
+                laudantium dolor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="selection section--divices">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">For all devices</h3>
+            <h2 class="section_title">Unique design</h2>
+          </div>
+          <div class="devices">
+            <img class="devices_item" src="/outher/images/ipad.jpg" alt="" />
+            <img
+              class="devices_item devices_item--iphone"
+              src="/outher/images/iphone.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="selection">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">Service</h3>
+            <h2 class="section_title">What we do</h2>
+            <div class="section_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+            </div>
+          </div>
+          <div class="wedo">
+            <div class="wedo_item">
+              <img class="wedo_img" src="/outher/images/chel.jpg" alt="" />
+            </div>
+            <div class="wedo_item">
+              <div class="acardion">
+                <div class="acardion_item" data-collapse="#wedo_1">
+                  <div class="acardion_header">
+                    <img
+                      class="acardion_icon"
+                      src="/outher/images/icons/photography .jpg"
+                      alt=""
+                    />
+                    <div class="acardion_title">Photography</div>
+                  </div>
+                  <div class="acardion_content" id="wedo_1">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore assumenda ab ipsa quod commodi consectetur! Atque,
+                      facilis dolorem. Maiores, odit temporibus? Iure cumque
+                      asperiores excepturi perferendis sunt, delectus veritatis
+                      earum aut omnis sequi odit rem ipsa dolor aperiam, maxime
+                      at vel assumenda qui veniam. Nihil ad magni repudiandae
+                      eos officiis.
+                    </p>
+                  </div>
+                </div>
+                <div class="acardion_item" data-collapse="#wedo_2">
+                  <div class="acardion_header">
+                    <img
+                      class="acardion_icon"
+                      src="/outher/images/icons/creativity.jpg"
+                      alt=""
+                    />
+                    <div class="acardion_title">Creativity</div>
+                  </div>
+                  <div class="acardion_content" id="wedo_2">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore assumenda ab ipsa quod commodi consectetur! Atque,
+                      facilis dolorem. Maiores, odit temporibus? Iure cumque
+                      asperiores excepturi perferendis sunt, delectus veritatis
+                      earum aut omnis sequi odit rem ipsa dolor aperiam, maxime
+                      at vel assumenda qui veniam. Nihil ad magni repudiandae
+                      eos officiis.
+                    </p>
+                  </div>
+                </div>
+                <div class="acardion_item" data-collapse="#wedo_3">
+                  <div class="acardion_header">
+                    <img
+                      class="acardion_icon"
+                      src="/outher/images/icons/web.jpg"
+                      alt=""
+                    />
+                    <div class="acardion_title">Web desing</div>
+                  </div>
+                  <div class="acardion_content" id="wedo_3">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore assumenda ab ipsa quod commodi consectetur! Atque,
+                      facilis dolorem. Maiores, odit temporibus? Iure cumque
+                      asperiores excepturi perferendis sunt, delectus veritatis
+                      earum aut omnis sequi odit rem ipsa dolor aperiam, maxime
+                      at vel assumenda qui veniam. Nihil ad magni repudiandae
+                      eos officiis.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card_info">
-              <div class="card_name">Ilyas Davletshin</div>
-              <div class="card_prof">Service ingeneer</div>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="selection selection--gray">
-      <div class="container">
-        <div class="logos">
-          <div class="logos_item">
-            <img src="/outher/images/logos/1.jpg" alt="" />
-          </div>
-          <div class="logos_item">
-            <img src="/outher/images/logos/2.jpg" alt="" />
-          </div>
-          <div class="logos_item">
-            <img src="/outher/images/logos/3.jpg" alt="" />
-          </div>
-          <div class="logos_item">
-            <img src="/outher/images/logos/4.jpg" alt="" />
-          </div>
-          <div class="logos_item">
-            <img src="/outher/images/logos/5.jpg" alt="" />
-          </div>
-          <div class="logos_item">
-            <img src="/outher/images/logos/6.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="selection">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">What we do</h3>
-          <h2 class="section_title">ome of our work</h2>
-          <div class="section_text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="works">
-        <div class="works_col">
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/11y_Laaqiq_02.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </section>
+      <div class="selection selection--gray">
+        <div class="container">
+          <div class="reviews">
+            <div data-slider>
+              <div>
+                <div class="reviews_item">
+                  <img class="reviews_foto" src="" alt="" />
+                  <div class="reviews_text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    est atque repellendus eos fugit sint. Voluptatem ex ab
+                    minima quidem modi laboriosam sequi repellat laudantium,
+                    labore dicta aperiam vero. Dolorem?
+                  </div>
+                  <div class="reviews_author">Ilyas Davletshin</div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/11y_Laaqiq_02.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works_col">
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/11y_Laaqiq_02.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/11y_Laaqiq_02.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works_col">
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/22_03.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works_col">
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/11y_Laaqiq_02.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </div>
-          <div class="works_item">
-            <img
-              class="works_img"
-              src="/outher/images/works/11y_Laaqiq_02.jpg"
-              alt=""
-            />
-            <div class="works_info">
-              <div class="works_title">Creative disigner</div>
-              <div class="works_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div>
+                <div class="reviews_item">
+                  <img class="reviews_foto" src="" alt="" />
+                  <div class="reviews_text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    est atque repellendus eos fugit sint. Voluptatem ex ab
+                    minima quidem modi laboriosam sequi repellat laudantium,
+                    labore dicta aperiam vero. Dolorem?
+                  </div>
+                  <div class="reviews_author">Ilyas Davletshin</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <div class="selection">
-      <div class="container">
-        <div class="reviews">
-          <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
-          <a class="reviews_btn reviews_btn--next" href="#">Next</a>
-          <div class="reviews_item">
-            <img class="reviews_foto" src="http://placehold.it/145" alt="" />
-            <div class="reviews_text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est
-              atque repellendus eos fugit sint. Voluptatem ex ab minima quidem
-              modi laboriosam sequi repellat laudantium, labore dicta aperiam
-              vero. Dolorem?
-            </div>
-            <div class="reviews_author">Ilyas Davletshin</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="selection section--clients">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">Happy claents</h3>
-          <h2 class="section_title">what peopse say</h2>
-        </div>
-        <div class="clients">
-          <div class="clients_item">
-            <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
-            <div class="clients_contents">
-              <div class="cleints_name">Ilyas dav</div>
-              <div class="clients_prof">master</div>
-              <div class="clients_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
-                neque tempora omnis.
-              </div>
+
+      <section class="selection">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">Who we are</h3>
+            <h2 class="section_title">Meet our team</h2>
+            <div class="section_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
             </div>
           </div>
-          <div class="clients_item">
-            <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
-            <div class="clients_contents">
-              <div class="cleints_name">Ilyas dav</div>
-              <div class="clients_prof">master</div>
-              <div class="clients_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
-                neque tempora omnis.
+          <div class="about">
+            <div class="about_item">
+              <div class="card_inner">
+                <div class="about_img">
+                  <img src="/outher/images/ilyas.jpg" alt="" />
+                </div>
+                <div class="about_text">
+                  <div class="social">
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card_info">
+                <div class="card_name">Ilyas Davletshin</div>
+                <div class="card_prof">Service ingeneer</div>
               </div>
             </div>
-          </div>
-          <div class="clients_item">
-            <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
-            <div class="clients_contents">
-              <div class="cleints_name">Ilyas dav</div>
-              <div class="clients_prof">master</div>
-              <div class="clients_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
-                neque tempora omnis.
+
+            <div class="about_item">
+              <div class="card_inner">
+                <div class="about_img">
+                  <img src="/outher/images/ilyas.jpg" alt="" />
+                </div>
+                <div class="about_text">
+                  <div class="social">
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card_info">
+                <div class="card_name">Ilyas Davletshin</div>
+                <div class="card_prof">Service ingeneer</div>
               </div>
             </div>
-          </div>
-          <div class="clients_item">
-            <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
-            <div class="clients_contents">
-              <div class="cleints_name">Ilyas dav</div>
-              <div class="clients_prof">master</div>
-              <div class="clients_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
-                neque tempora omnis.
+
+            <div class="about_item">
+              <div class="card_inner">
+                <div class="about_img">
+                  <img src="/outher/images/ilyas.jpg" alt="" />
+                </div>
+                <div class="about_text">
+                  <div class="social">
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="social_item" href="#" terget="blank">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="selection">
-      <div class="container">
-        <div class="section_heder">
-          <h3 class="section_suptitle">Our stories</h3>
-          <h2 class="section_title">latest blog</h2>
-        </div>
-        <div class="blog">
-          <div class="blog_item">
-            <div class="blog_header">
-              <a href="#">
-                <img
-                  class="blog_foto"
-                  src="/outher/images/blog/1111111.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="blog_date">
-                <div class="blog_date-day">15</div>
-                Jan
-              </div>
-            </div>
-            <div class="blog_content">
-              <div class="blog_title">
-                <a href="#"
-                  >Lorem ipsum, dolor sit amet consectetur adipisicing.</a
-                >
-              </div>
-              <div class="blog_text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laborum quae vitae accusantium sint dolores impedit.
-              </div>
-            </div>
-            <div class="blog_footer">
-              <div class="blog_stat">
-                <span class="blog_stst_item">
-                  <i class="fa-sharp fa-solid fa-eye"></i>542</span
-                >
-                <span class="blog_stst_item"
-                  ><i class="fa-solid fa-comment-dots"></i>17</span
-                >
+              <div class="card_info">
+                <div class="card_name">Ilyas Davletshin</div>
+                <div class="card_prof">Service ingeneer</div>
               </div>
             </div>
           </div>
-          <div class="blog_item">
-            <div class="blog_header">
-              <a href="#">
-                <img
-                  class="blog_foto"
-                  src="/outher/images/blog/1111111.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="blog_date">
-                <div class="blog_date-day">15</div>
-                Jan
-              </div>
+        </div>
+      </section>
+      <div class="selection selection--gray">
+        <div class="container">
+          <div class="logos">
+            <div class="logos_item">
+              <img class="logos_img" src="/outher/images/logos/1.jpg" alt="" />
             </div>
-            <div class="blog_content">
-              <div class="blog_title">
-                <a href="#"
-                  >Lorem ipsum, dolor sit amet consectetur adipisicing.</a
-                >
-              </div>
-              <div class="blog_text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laborum quae vitae accusantium sint dolores impedit.
-              </div>
+            <div class="logos_item">
+              <img class="logos_img" src="/outher/images/logos/2.jpg" alt="" />
             </div>
-            <div class="blog_footer">
-              <div class="blog_stat">
-                <span class="blog_stst_item">
-                  <i class="fa-sharp fa-solid fa-eye"></i>542</span
-                >
-                <span class="blog_stst_item"
-                  ><i class="fa-solid fa-comment-dots"></i>17</span
-                >
-              </div>
+            <div class="logos_item">
+              <img class="logos_img" src="/outher/images/logos/3.jpg" alt="" />
             </div>
-          </div>
-          <div class="blog_item">
-            <div class="blog_header">
-              <a href="#">
-                <img
-                  class="blog_foto"
-                  src="/outher/images/blog/1111111.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="blog_date">
-                <div class="blog_date-day">15</div>
-                Jan
-              </div>
+            <div class="logos_item">
+              <img class="logos_img" src="/outher/images/logos/4.jpg" alt="" />
             </div>
-            <div class="blog_content">
-              <div class="blog_title">
-                <a href="#"
-                  >Lorem ipsum, dolor sit amet consectetur adipisicing.</a
-                >
-              </div>
-              <div class="blog_text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laborum quae vitae accusantium sint dolores impedit.
-              </div>
+            <div class="logos_item">
+              <img class="logos_img" src="/outher/images/logos/5.jpg" alt="" />
             </div>
-            <div class="blog_footer">
-              <div class="blog_stat">
-                <span class="blog_stst_item">
-                  <i class="fa-sharp fa-solid fa-eye"></i>542</span
-                >
-                <span class="blog_stst_item"
-                  ><i class="fa-solid fa-comment-dots"></i>17</span
-                >
-              </div>
+            <div class="logos_item">
+              <img class="logos_img" src="/outher/images/logos/6.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="selection selection--map">
-      <div class="container">
-        <div class="map">
-          <h2 class="map_title">
-            <div><i class="fa-sharp fa-solid fa-location-dot"></i></div>
-            <a href="https://goo.gl/maps/1uE6KHp6MccLekGj6" target="_blank">
-              open map
-            </a>
-          </h2>
+      <section class="selection" id="work">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">What we do</h3>
+            <h2 class="section_title">ome of our work</h2>
+            <div class="section_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <footer class="foter">
-      <div class="container">
-        <div class="foter_inner">
-          <div class="foter_col foter_col--first">
-            <div class="foter_logo">Mogo</div>
-            <div class="foter_text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              similique cupiditate, ut sit perspiciatis odio blanditiis
-              accusantium libero dolorum soluta impedit quidem facere molestias
-              nisi asperiores quod ab ipsum totam!
-            </div>
-            <div class="foter_social">
-              <div class="foter_social-header"><b>15k</b> folowers</div>
-              <div class="foter_social-content">
-                Folow Us:
-                <a href="#" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <form class="subscribe" action="/" method="post">
-              <input
-                class="subscribe_input"
-                type="email"
-                name="name"
-                placeholder="Your Email ..."
+        <div class="works">
+          <div class="works_col">
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/11y_Laaqiq_02.jpg"
+                alt=""
               />
-              <button class="subscribe_button" type="submit">Subscribe</button>
-            </form>
-          </div>
-          <div class="foter_cool foter_col--second">
-            <div class="foter_title">Blogs</div>
-            <div class="blogs_item">
-              <img class="blogs_img" src="/outher/images/blog.jpg" alt="" />
-              <div class="blogs_content">
-                <a class="blogs_title" href="#"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing.</a
-                >
-                <div class="blogs_data">Jan 9,2016</div>
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
               </div>
             </div>
-
-            <div class="blogs_item">
-              <img class="blogs_img" src="/outher/images/blog.jpg" alt="" />
-              <div class="blogs_content">
-                <a class="blogs_title" href="#"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing.</a
-                >
-                <div class="blogs_data">Jan 9,2016</div>
-              </div>
-            </div>
-
-            <div class="blogs_item">
-              <img class="blogs_img" src="/outher/images/blog.jpg" alt="" />
-              <div class="blogs_content">
-                <a class="blogs_title" href="#"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing.</a
-                >
-                <div class="blogs_data">Jan 9,2016</div>
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/11y_Laaqiq_02.jpg"
+                alt=""
+              />
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
               </div>
             </div>
           </div>
-          <div class="foter_cool foter_col--third">
-            <div class="foter_title">Instagram</div>
-            <div class="instagram">
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
-              <a class="inst_item" href="#" target="_blank">
-                <img src="/outher/images/inst.jpg" alt="" />
-              </a>
+          <div class="works_col">
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/11y_Laaqiq_02.jpg"
+                alt=""
+              />
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
+            </div>
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/11y_Laaqiq_02.jpg"
+                alt=""
+              />
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works_col">
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/22_03.jpg"
+                alt=""
+              />
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works_col">
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/11y_Laaqiq_02.jpg"
+                alt=""
+              />
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
+            </div>
+            <div class="works_item">
+              <img
+                class="works_img"
+                src="/outher/images/works/11y_Laaqiq_02.jpg"
+                alt=""
+              />
+              <div class="works_info">
+                <div class="works_title">Creative disigner</div>
+                <div class="works_title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="copyright">
-          2022 Mogo. By to Ilyas <span> Davletshin</span>
+      </section>
+      <div class="selection">
+        <div class="container">
+          <div class="reviews">
+            <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
+            <a class="reviews_btn reviews_btn--next" href="#">Next</a>
+            <div class="reviews_item">
+              <img class="reviews_foto" src="http://placehold.it/145" alt="" />
+              <div class="reviews_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est
+                atque repellendus eos fugit sint. Voluptatem ex ab minima quidem
+                modi laboriosam sequi repellat laudantium, labore dicta aperiam
+                vero. Dolorem?
+              </div>
+              <div class="reviews_author">Ilyas Davletshin</div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+      <section class="selection section--clients">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">Happy claents</h3>
+            <h2 class="section_title">what peopse say</h2>
+          </div>
+          <div class="clients">
+            <div class="clients_item">
+              <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
+              <div class="clients_contents">
+                <div class="cleints_name">Ilyas dav</div>
+                <div class="clients_prof">master</div>
+                <div class="clients_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+                  neque tempora omnis.
+                </div>
+              </div>
+            </div>
+            <div class="clients_item">
+              <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
+              <div class="clients_contents">
+                <div class="cleints_name">Ilyas dav</div>
+                <div class="clients_prof">master</div>
+                <div class="clients_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+                  neque tempora omnis.
+                </div>
+              </div>
+            </div>
+            <div class="clients_item">
+              <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
+              <div class="clients_contents">
+                <div class="cleints_name">Ilyas dav</div>
+                <div class="clients_prof">master</div>
+                <div class="clients_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+                  neque tempora omnis.
+                </div>
+              </div>
+            </div>
+            <div class="clients_item">
+              <img class="clients_foto" src="/outher/images/0_06.jpg" alt="" />
+              <div class="clients_contents">
+                <div class="cleints_name">Ilyas dav</div>
+                <div class="clients_prof">master</div>
+                <div class="clients_text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+                  neque tempora omnis.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="selection" id="blog">
+        <div class="container">
+          <div class="section_heder">
+            <h3 class="section_suptitle">Our stories</h3>
+            <h2 class="section_title">latest blog</h2>
+          </div>
+          <div class="blog">
+            <div class="blog_item">
+              <div class="blog_header">
+                <a href="#">
+                  <img
+                    class="blog_foto"
+                    src="/outher/images/blog/1111111.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="blog_date">
+                  <div class="blog_date-day">15</div>
+                  Jan
+                </div>
+              </div>
+              <div class="blog_content">
+                <div class="blog_title">
+                  <a href="#"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing.</a
+                  >
+                </div>
+                <div class="blog_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laborum quae vitae accusantium sint dolores impedit.
+                </div>
+              </div>
+              <div class="blog_footer">
+                <div class="blog_stat">
+                  <span class="blog_stst_item">
+                    <i class="fa-sharp fa-solid fa-eye"></i>542</span
+                  >
+                  <span class="blog_stst_item"
+                    ><i class="fa-solid fa-comment-dots"></i>17</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="blog_item">
+              <div class="blog_header">
+                <a href="#">
+                  <img
+                    class="blog_foto"
+                    src="/outher/images/blog/1111111.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="blog_date">
+                  <div class="blog_date-day">15</div>
+                  Jan
+                </div>
+              </div>
+              <div class="blog_content">
+                <div class="blog_title">
+                  <a href="#"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing.</a
+                  >
+                </div>
+                <div class="blog_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laborum quae vitae accusantium sint dolores impedit.
+                </div>
+              </div>
+              <div class="blog_footer">
+                <div class="blog_stat">
+                  <span class="blog_stst_item">
+                    <i class="fa-sharp fa-solid fa-eye"></i>542</span
+                  >
+                  <span class="blog_stst_item"
+                    ><i class="fa-solid fa-comment-dots"></i>17</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="blog_item">
+              <div class="blog_header">
+                <a href="#">
+                  <img
+                    class="blog_foto"
+                    src="/outher/images/blog/1111111.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="blog_date">
+                  <div class="blog_date-day">15</div>
+                  Jan
+                </div>
+              </div>
+              <div class="blog_content">
+                <div class="blog_title">
+                  <a href="#"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing.</a
+                  >
+                </div>
+                <div class="blog_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laborum quae vitae accusantium sint dolores impedit.
+                </div>
+              </div>
+              <div class="blog_footer">
+                <div class="blog_stat">
+                  <span class="blog_stst_item">
+                    <i class="fa-sharp fa-solid fa-eye"></i>542</span
+                  >
+                  <span class="blog_stst_item"
+                    ><i class="fa-solid fa-comment-dots"></i>17</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="selection selection--map">
+        <div class="container">
+          <div class="map">
+            <h2 class="map_title">
+              <div><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+              <a href="https://goo.gl/maps/1uE6KHp6MccLekGj6" target="_blank">
+                open map
+              </a>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <footer class="foter" id="footer">
+        <div class="container">
+          <div class="foter_inner">
+            <div class="foter_col foter_col--first">
+              <div class="foter_logo">Mogo</div>
+              <div class="foter_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda similique cupiditate, ut sit perspiciatis odio
+                blanditiis accusantium libero dolorum soluta impedit quidem
+                facere molestias nisi asperiores quod ab ipsum totam!
+              </div>
+              <div class="foter_social">
+                <div class="foter_social-header"><b>15k</b> folowers</div>
+                <div class="foter_social-content">
+                  Folow Us:
+                  <a href="#" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+              <form class="subscribe" action="/" method="post">
+                <input
+                  class="subscribe_input"
+                  type="email"
+                  name="name"
+                  placeholder="Your Email ..."
+                />
+                <button class="subscribe_button" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <div class="foter_cool foter_col--second">
+              <div class="foter_title">Blogs</div>
+              <div class="blogs_item">
+                <img class="blogs_img" src="/outher/images/blog.jpg" alt="" />
+                <div class="blogs_content">
+                  <a class="blogs_title" href="#"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing.</a
+                  >
+                  <div class="blogs_data">Jan 9,2016</div>
+                </div>
+              </div>
+
+              <div class="blogs_item">
+                <img class="blogs_img" src="/outher/images/blog.jpg" alt="" />
+                <div class="blogs_content">
+                  <a class="blogs_title" href="#"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing.</a
+                  >
+                  <div class="blogs_data">Jan 9,2016</div>
+                </div>
+              </div>
+
+              <div class="blogs_item">
+                <img class="blogs_img" src="/outher/images/blog.jpg" alt="" />
+                <div class="blogs_content">
+                  <a class="blogs_title" href="#"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing.</a
+                  >
+                  <div class="blogs_data">Jan 9,2016</div>
+                </div>
+              </div>
+            </div>
+            <div class="foter_cool foter_col--third">
+              <div class="foter_title">Instagram</div>
+              <div class="instagram">
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+                <a class="inst_item" href="#" target="_blank">
+                  <img src="/outher/images/inst.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            2022 Mogo. By to Ilyas <span> Davletshin</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/outher/js/app.js"></script>
   </body>
 </html>
